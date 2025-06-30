@@ -43,3 +43,5 @@ function App() {
   );
 }
 ````
+
+![Aperçu](./screenshot_modal.png)
