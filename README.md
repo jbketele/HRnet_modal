@@ -18,3 +18,28 @@ Ce composant est réutilisable et facilement intégrable dans tout projet React.
 
 ```bash
 npm install @jbketele/hrnet-modal
+```
+
+## 💡 Utilisation de base
+
+Voici un exemple simple d'intégration du composant dans une application React :
+
+```jsx
+import { useState } from 'react';
+import Modal from '@jbketele/hrnet-modal';
+
+function App() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  return (
+    <div>
+      <button onClick={() => setIsModalOpen(true)}>Créer un employé</button>
+      
+      <Modal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+      />
+    </div>
+  );
+}
+````
